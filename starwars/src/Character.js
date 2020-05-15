@@ -25,14 +25,8 @@ const Character = (props) => {
       </div>
       
       
-      {data.map(( index) => <li key={index}><p>Name: {data.name}</p>
+      {data.map((index) => <li key={index}><p>Name: {data.name}</p>
         <p>Age: {data.age}</p></li>)}
-
-        
-      
-        
-
-
     </StyledHeading>
     );
   }
