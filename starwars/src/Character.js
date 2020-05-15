@@ -6,7 +6,7 @@ const StyledHeading = styled.div`
     display: flex;
     justify-content: space-evenly;
     padding: 100px;
-    background-color: red;
+    background-color: rgb(244, 244, 244, 0.4);
   }
 
 `
@@ -20,8 +20,10 @@ const Character = (props) => {
       <div className="Character">
         <h1 className="Character">Name: {character.name}</h1>
         <ul>
-        <li>Gender: {character.gender}</li>
-        <li>Age: {character.gender}</li>
+        
+        <p>Gender: {character.gender}</p>
+        <p>Height: {character.height}</p>
+        <p>Mass: {character.mass}</p>
         </ul>
         
       </div>
