@@ -1,32 +1,32 @@
-import React from 'react';
+import React, {useState} from 'react'
 import styled from 'styled-components';
 
 const StyledHeading = styled.div`
-.topDiv {
+.Character {
     display: flex;
     justify-content: space-evenly;
     padding: 100px;
     background-color: red;
   }
 
-  .photo {
-    display: flex;
-    justify-content: space-evenly;
-  }
-
 `
 
 const Character = (props) => {
-    const { data } = props
+  const { character } = props
+    
+    
     return (
     <StyledHeading>
-      <div className="Characters">
-        <h1 className="Character">Character</h1>
+      <div className="Character">
+        <h1 className="Character">Name: {character.name}</h1>
+        <ul>
+        <li>Gender: {character.gender}</li>
+        <li>Age: {character.gender}</li>
+        </ul>
+        
       </div>
       
       
-      {data.map((index) => <li key={index}><p>Name: {data.name}</p>
-        <p>Age: {data.age}</p></li>)}
     </StyledHeading>
     );
   }
